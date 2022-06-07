@@ -39,7 +39,7 @@
 
 .field{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 25em;
     margin-bottom: 0.9375rem;
 }
@@ -52,6 +52,7 @@
 }
 
 input[type="number"] {
+    width: 11em;
     padding: 0.625em;
     border: solid 1px black;
     margin-bottom: 0.3125rem;
