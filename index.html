@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro</title>
+    <title>Temporizador</title>
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body class="body">
@@ -15,18 +15,20 @@
     <section id="app">
         <h2 id="timeRemaining">00:00.0</h2>
         <div class="field" id="inputsContainer">
-            <label class="field__label">Minutos</label>
             <div class="field__control">
-                <input class="control__input" id="minutes" type="number" placeholder="Minutos">
+                <label class="control__label">Minutos</label>
+                <input class="control__input" id="minutes" type="number" min="0" pattern="^[0-9]+">
             </div>
-            <label class="field__label">Segundos</label>
             <div class="field__control">
-                <input class="control__input" id="seconds" type="number" placeholder="Segundos">
+                <label class="control__label">Segundos</label>
+                <input class="control__input" id="seconds" type="number" min="0" pattern="^[0-9]+">
             </div>
         </div>
-        <button id="btnStart" class="btn is-success">Iniciar</button>
-        <button id="btnPause" class="btn is-success">Pausar</button>
-        <button id="btnStop" class="btn is-success">Detener</button>
+        <div class="buttons">
+            <button id="btnStart" class="btn is-success">Iniciar</button>
+            <button id="btnPause" class="btn is-success">Pausar</button>
+            <button id="btnStop" class="btn is-success">Detener</button>
+        </div>
     </section>
 
     <footer class="footer">

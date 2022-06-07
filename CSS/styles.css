@@ -37,10 +37,31 @@
     padding: 1.25em 0;
 }
 
+.field{
+    display: flex;
+    justify-content: space-between;
+    width: 25em;
+    margin-bottom: 0.9375rem;
+}
+
+.field__control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 input[type="number"] {
     padding: 0.625em;
     border: solid 1px black;
     margin-bottom: 0.3125rem;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 9.375em;
 }
 
 button{
@@ -50,6 +71,8 @@ button{
     padding: 0.625em;
     border-radius: 5px;
 }
+
+
 
 .footer{
     padding: 2.125em 0;

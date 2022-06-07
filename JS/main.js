@@ -95,6 +95,12 @@ const init = () => {
     showElement($btnStart);
     hideElement($btnPause);
     hideElement($btnStop);
+    if (Number.isNaN(($minutes.valueAsNumber))) {
+        $minutes.value = 0;
+    }
+    if (Number.isNaN(($seconds.valueAsNumber))) {
+        $seconds.value = 0;
+    }
 }
 
 $btnStart.onclick = () => {
