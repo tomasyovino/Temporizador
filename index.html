@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="header-title">Temporizador Online</h1>
+    </header>
+
+    <section id="app">
+        <h2 id="timeRemaining">00:00.0</h2>
+        <div class="field" id="inputsContainer">
+            <label class="field__label">Minutos</label>
+            <div class="field__control">
+                <input class="control__input" id="minutes" type="number" placeholder="Minutos">
+            </div>
+            <label class="field__label">Segundos</label>
+            <div class="field__control">
+                <input class="control__input" id="seconds" type="number" placeholder="Segundos">
+            </div>
+        </div>
+        <button id="btnStart" class="btn is-success">Iniciar</button>
+        <button id="btnPause" class="btn is-success">Pausar</button>
+        <button id="btnStop" class="btn is-success">Detener</button>
+    </section>
+
+    <footer class="footer">
+        <span class="footer__span">© 2022 Tomás Yovino</span>
+    </footer>
+
+    <script src="./JS/main.js"></script>
+</body>
+</html>
